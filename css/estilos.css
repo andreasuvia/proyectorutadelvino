@@ -1,0 +1,24 @@
+header{
+    width: 100%;
+    list-style: none;
+}
+
+.menu{
+    
+}
+
+header div nav a{
+    float: right;
+    margin-left: 75px;
+    padding: 12px 0;
+    text-decoration: none;
+    color:#000000;
+    font-weight: bold;
+    
+}
+
+#logo{
+    margin-right: 100px;
+    margin-left: 25px;
+    float: left;
+}
