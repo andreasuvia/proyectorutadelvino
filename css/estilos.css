@@ -1,24 +1,312 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, header {
+  margin: 10px 20px;
+}
+
+html{
+height: 100%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: medium;
+
+}
+
+
+
 header{
-    width: 100%;
-    list-style: none;
+  width: 100%;
+  list-style: none;
+  margin-left: 0px;
+}
+
+.encabezado{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color:crimson;
 }
 
 .menu{
-    
+  background-color:#ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 0px;
 }
 
-header div nav a{
-    float: right;
-    margin-left: 75px;
-    padding: 12px 0;
-    text-decoration: none;
-    color:#000000;
-    font-weight: bold;
-    
+nav a{
+  float: left;
+  margin-left: 50px;
+  padding: 10px 0;
+  text-decoration: none;
+  color:#000000;
+  font-weight: bold;
 }
+
+nav a:hover{
+  color:crimson;
+}
+
+nav{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 20px;
+  left: auto;
+  position: relative;
+ 
+}
+
 
 #logo{
-    margin-right: 100px;
-    margin-left: 25px;
-    float: left;
+  margin-right: 30px;
+  margin-left: 25px;
+  float: left;
 }
+
+.redes{
+  float: rigth;
+  padding-top: 60px;
+  text-align: center;
+
+}
+
+#logo img{
+width: 50%;
+
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7c231a;
+  border-radius: 5px;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #363535;
+
+}
+
+.chat{
+padding-top: 50px;
+float: left;
+}
+
+.bienvenidos{
+  width: 100%;
+  background-color: #ebeeef;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  font-size: 16px;
+
+ }
+
+ 
+
+ .historia{
+  float: left;
+  width: 45%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 30px; 
+  
+
+ }
+
+ .historia2{
+  float: left;
+  width: 100%; /* three boxes (use 25% for four, and 50% for two, etc) */
+  padding: 0px 30px; 
+
+ }
+
+ .titulo{
+  position: absolute;
+height : 100%;
+
+ }
+
+ p{
+ margin-top: 10px;
+ padding-top: 10px;
+
+ }
+
+
+ .flex-container {
+  display: flex; 
+  /*height: 400px;*/
+  flex-direction: row ; /*column, row-reverse, column-reverse*/
+  flex-wrap:  wrap;  /* nowrap / wrap-reverse; */
+  /* atajo  */
+  /*flex-flow: row wrap;    */
+  justify-content:  center; /*flex-start / flex-end / center/ space-around/ space-between / space-evenly
+  /*  alrededor Entre uniformemente  */
+  align-items:   center; /*flex-start / flex-end / center/ space-around/ space-between / space-evenly*/
+  background-color: #ffffff;
+  clear: both; 
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.flex-container>div {
+  background-color: #f1f1f1;
+  width: 330px;
+  margin: 5px;
+
+}
+
+/* nuestras vids */
+
+/* flip card */
+
+.grid-container {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 50px;
+  height: 100%;
+  align-content: space-evenly;
+  position: relative;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 10px;
+    height: 250px;
+    perspective: 1000px;
+    /* transform: rotate(355deg); */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .Mendoza{
+    color: #7c231a;
+  }
+  
+  .flip-card-back {
+    background-color: #397403;
+    color: white;
+    transform: rotateY(180deg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .item5{
+    grid-column-start: 3;
+  }
+  .item7{
+    grid-column-start: 3;
+  }
+
+  .conocermas {
+    border: 1px solid green;
+    outline: 0;
+    padding: 12px;
+    color: #ffffff;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .conocermas a {
+    color: #ffffff;
+  }
+
+  /* grid de nuestras vids */
+
+
+
+.main{
+  background-image: url('/imagenes/ruta2.jpg');
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.flip-card{
+  width: 100%;
+
+}
+
+.box {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  border: 1px solid rgba(252, 4, 4, 0.8);
+  position: absolute;
+}
+
+
+
+footer{
+  background-color:  #7c231a;
+  width: 100%;
+  height: 200px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  font-size: 16px;
+  color: #ebeeef;
+
+}
+
+.pie1{
+  float: left;
+  width: 33%;
+
+ }
+ .pie2{
+  float: left;
+  width: 33%;
+ }
+
+ .pie3{
+  float: left;
+  width: 33%;
+
+ }
+
