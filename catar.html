@@ -14,8 +14,48 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1e8e4e50bc.js" crossorigin="anonymous"></script>
-</head>
+<style> 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
 <body>
 
     <header>
@@ -41,46 +81,123 @@
     <main>
         <br><br><br>
         <H3>La Cata del Vino</H3>
-        <p>"Consiste en probar con atención un producto cuya calidad queremos apreciar; se trata de someterlo a nuestros
-            sentidos y conocerlo buscando sus diferentes defectos y cualidades, con el fin de expresarlos; la cata es
-            estudiar, describir, definir, juzgar y clasificar"
-            Peynaud</p>
+        <p>"Consiste en probar con atención un producto cuya calidad queremos apreciar; se trata de someterlo a 
+            nuestros entidos y conocerlo buscando sus diferentes defectos y cualidades, con el fin de expresarlos;
+             la cata es estudiar, describir, definir, juzgar y clasificar" Peynaud</p>
         <br><br>
         <img src="./imagenes/cata-vinos.jpg" alt="Cata">
-        <br><br>
+    <br>
         <h3>Cómo catar el Vino</h3>
-
-        <p>La cata paso a paso:</p>
-
+ 
+ <main class="main">
+  <div class="grid-container">
+    
+    <div class="item1">
+        <div class="flip-card">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+    <img src="./imagenes/cata fase visual.png" alt="visual" height="200">
+</div>
+<div class="flip-card-back">
+    <a href="#catavisual"> <h1>VISUAL</h1></a>
+</div>
+</div>
+</div>
+</div>
+<div class="item2">
+        <div class="flip-card">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <img src="./imagenes/catar fase olfato.jpg" alt="olfato" height="200">
+</div>
+<div class="flip-card-back">
+    <a href="#cataolfativa"> <h1>OLFATO</h1></a>
+</div>
+</div>
+</div>
+</div>
+<div class="item3">
+    <div class="flip-card">
+    <div class="flip-card-inner">
+    <div class="flip-card-front">
+ <img src="./imagenes/catar fase gusto.png" alt="gusto" height="200">
+</div>
+<div class="flip-card-back">
+<a href="#catagusto"> <h1>GUSTO</h1></a>
+</div>
+</div>
+</div>
+</div>
+</main>
+<main>
         <ol>
+            <h3>La cata paso a paso:</h3>
+            <br>
+        <h4 id="catavisual"> Visual</h4>
+        <a href="#nav"></a>
             <li>
-                Con la copa inclinada sobre un fondo blanco, observe el color y la intensidad del vino y su aspecto
-                (limpio, brillante). Haga girar la copa y verá que se forman una gotas que caen por las paredes
-                interiores del cristal. Estas "piernas" o "lágrimas" le darán una idea del cuerpo, textura y graduación
-                alcohólica del vino.
+                Inclina la copa formando un ángulo de 45º aproximadamente para poder mirar a través del líquido 
+                desde arriba, sobre un fondo blanco o colores claros, podrá observar el color y la intensidad del vino 
+                y su aspecto (limpio, brillante). Haga girar la copa y verá que se forman una gotas que caen por las 
+                paredes interiores del cristal. Estas "piernas" o "lágrimas" le darán una idea del cuerpo, textura y
+                 graduación alcohólica del vino. Repite este procedimiento hasta que veas el vino con claridad. 
+                El análisis visual te permitirá conseguir información acerca de la madurez del vino y su concentración.
+                En esta primera fase vamos a valorar elementos como la nitidez, la intensidad, el color, etc. y, por 
+                supuesto, detectaremos cualquier defecto que pueda sufrir el vino.
             </li>
+       <br>
+        <h4 id="cataolfativa"> Olfativa</h4>
+        <a href="#nav"></a>
             <li>
-                Sujete la copa por el pie y literalmente introduzca la nariz en ella. Inhale profundamente y trate de
-                percibir sus aromas. Haga girar la copa para liberar los compuestos aromáticos y repita la operación.
+                El olfato es el sentido más importante en la cata y degustación de vinos. 
+                Sujete la copa por el pie y literalmente introduzca la nariz en ella sin agitar. Inhale profundamente
+                y trate de identificar los aromas primarios, que son los que obtenemos de las uvas, de la tierra, 
+                aromas frutales, etc
+                Haga girar la copa, moviendo levemente para liberar los compuestos aromáticos secundarios, al 
+                descubierto cuando el vino esta en contacto con el oxígenoy repita la operación. Estos aromas son los 
+                que se obtiienen durante la fermentacion y los distintos procesos de vinificación.
                 Compare los aromas percibidos con otros olores conocidos. Si huele a fruta, intente precisar cuáles son
-                esas frutas ¿Son blancas o rojas? ¿Son tropicales o de bosque?
+                esas frutas ¿Son blancas o rojas? ¿Son tropicales o de bosque? estos aromas son los terciarios o bouquet.
+                Son los que se obtienen durante y tras la crianza del vino y suelen corresponder a aromas vegetales, de
+                frutos secos, frutales, a flores, etc.
             </li>
+       <br>
+        <h4 id="catagusto"> Gusto</h4>
+        <a href="#nav"></a>
             <li>
                 Este es el momento en que se confirma lo que se ha captado en las otras dos fases. Tome un sorbo de vino
-                lo suficientemente grande como para impregnar toda la lengua. Aspire una pequeña cantidad de aire y haga
-                girar el vino dentro de la boca. Intente descubrir los sabores y texturas del vino, así como la
-                sensación que deja. Cuando haya descubierto todo lo posible, tráguelo o escúpalo, si va a seguir
-                catando.
+                lo suficientemente grande como para impregnar toda la lengua y que pueda percibir todos los sabores 
+                adecuadamente (dulce, ácido y amargo), así como la sensación que deja. Un vino redondo, perfecto, será el
+                que consiga un buen equilibrio entre esos tres sabores.
+                A continuación, tenemos que apreciar y analizar sensaciones táctiles como el cuerpo, la astringencia
+                (sensación de sequedad), la temperatura, la efervescencia y la textura. 
+                Tras tragar o escupir el vino debemos expulsar el aire por la nariz y apreciar las sensaciones que perma-
+                necen en la boca y el tiempo que lo hacen. Estas sensaciones son distintas en cada persona, esta fase se 
+                denomina fase retronasal. 
+                Habitualmente, en los vinos de una calidad básica esas sensaciones o sabores suelen desaparecer 
+                rápidamente (en cuestión de segundos), decimos que su final es corto. Sin embargo, en los vinos de una 
+                gran calidad, esos sabores o sensaciones pueden permanecer incluso más de un minuto, en ese caso, decimos 
+                que su final es largo. 
             </li>
-            <li>
+
+       <br>
                 Disfrute y sienta la naturaleza de nuestras tierras, los aromas de nuestros frutos y los colores
                 intensos que nos brinda.
-            </li>
+       <br>
+    
+        <h3>Aprende a catar un buen vino</h3>
+          <p>Si te dieron ganas de aprender cómo catar vino no olvides que uno de los requisitos es realizar muchas catas. 
+            Disfrutarás de un recorrido completo por las instalaciones en las bodegas de nuestro país y podrás poner en 
+            práctica tus conocimientos o aprender desde cero, porque nosotros te enseñaremos todo lo que necesitas saber.</p> 
         </ol>
-        <br><br>
-        <img src="./imagenes/cata-vinos-2.jpg" alt="catando">
-        <br><br>
-    </main>
+
+        <h2>Viví la experiencia con nosotros</h2>
+        <label for="email">Dejanos tu e-mail y te enviamos nuestras próximas visitas a las bodegas</label>
+
+<input type="email" id="email"
+       pattern=".+@globex\.com" size="30" required>
+       <br>
+  </main>
     <footer>
         <div class="pie1">
           <p> <b> Síguenos en las redes sociales </b> </p>
