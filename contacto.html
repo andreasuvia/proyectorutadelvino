@@ -3,18 +3,18 @@
 
 <head>
     <script src="./edad.js"></script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Ruta del Vino</title>
-  <link rel="icon" href="./imagenes/uvas.ico" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/estilos.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/1e8e4e50bc.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Ruta del Vino</title>
+    <link rel="icon" href="./imagenes/uvas.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1e8e4e50bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,38 +22,37 @@
     <header>
 
         <div class="logo"> <a href="index.html"> <img src="./imagenes/cartel.png" alt="Logo"> </a></div>
-        <div class="redes"> 
-            <p><b> Seguinos: <br/></p>
-            <a target="_blank" href="https://facebook.com"><img src="./imagenes/facebook.png" width="30px" alt="Facebook"></a>
-            <a target="_blank" href="https://instagram.com"><img src="./imagenes/instagram.png" width="30px" alt="instagram"></a>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=054294154897642"><img src="./imagenes/whatsapp.png" width="30px" alt="whatsapp"></a>
+        <div class="redes">
+            <p><b> Seguinos: <br /></p>
+            <a target="_blank" href="https://facebook.com"><img src="./imagenes/facebook.png" width="30px"
+                    alt="Facebook"></a>
+            <a target="_blank" href="https://instagram.com"><img src="./imagenes/instagram.png" width="30px"
+                    alt="instagram"></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=054294154897642"><img
+                    src="./imagenes/whatsapp.png" width="30px" alt="whatsapp"></a>
         </div>
 
         <nav>
             <div class="topnav">
                 <a href="index.html"><img src="./imagenes/casa.png"></a>
                 <a href="index.html#Historia">Historia</a>
-                <a target="_blank" href="nuestrasvids.html">Nuestras Vids</a>
-                <a target="_blank" href="catar.html">Catar Vino</a>
-                <a target="_blank" href="contacto.html">Contacto</a>
+                <a href="nuestrasvids.html">Nuestras Vids</a>
+                <a href="catar.html">Catar Vino</a>
+                <a href="contacto.html">Contacto</a>
             </div>
         </nav>
     </header>
     <main class="contacto">
         <br><br><br>
-        
+
 
         <div class="contacto">
-            <!-- <legend>
-                <h3>Contáctenos:</h3>
-            </legend> -->
-
             <form action="" class="formulario" id="formulario" name="fvalida">
 
                 <!-- Grupo : nombre -->
-                
+
                 <div class="formulario__grupo" id="grupo__nombre">
-                    <label for="nombre" class="formulario__label" >Nombre</label>
+                    <label for="nombre" class="formulario__label">Nombre</label>
                     <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan/Juana">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
@@ -64,49 +63,54 @@
                 <!-- Grupo : apellido -->
 
                 <div class="formulario__grupo" id="grupo__apellido">
-                    <label for="apellido" class="formulario__label" >Apellido</label>
+                    <label for="apellido" class="formulario__label">Apellido</label>
                     <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Perez">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
                     <p class="formulario__input-error"><b>El apellido solo puede contener letras</b></p>
-                    
+
                 </div>
 
                 <!-- Grupo : correo electrónico -->
 
                 <div class="formulario__grupo" id="grupo__telefono">
-                    <label for="telefono" class="formulario__label" >Teléfono</label>
+                    <label for="telefono" class="formulario__label">Teléfono</label>
                     <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="549123456789">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="549123456789">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error"> <b> El teléfono solo puede contener números y el máximo son 14 dígitos.</b></p>
-                    
+                    <p class="formulario__input-error"> <b> El teléfono solo puede contener números y el máximo son 14
+                            dígitos.</b></p>
+
                 </div>
 
-                 <!-- Grupo : teléfono -->
+                <!-- Grupo : teléfono -->
 
-                 <div class="formulario__grupo" id="grupo__correo">
-                    <label for="correo" class="formulario__label" >Correo Electrónico</label>
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
                     <div class="formulario__grupo-input">
-                        <input type="text" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <input type="text" class="formulario__input" name="correo" id="correo"
+                            placeholder="correo@correo.com">
                         <i class="formulario__validacion-estado fas fa-times-circle"></i>
                     </div>
-                    <p class="formulario__input-error"> <b> El correo solo puede contener letras, números, puntos, guiones y guión bajo.</b> </p>
-                    
+                    <p class="formulario__input-error"> <b> El correo solo puede contener letras, números, puntos,
+                            guiones y guión bajo.</b> </p>
+
                 </div>
 
                 <!-- Grupo : Comentarios -->
 
                 <div class="formulario__grupo" id="grupo__comentarios">
-                    <label for="comentarios" class="formulario__label" >Comentarios</label>
+                    <label for="comentarios" class="formulario__label">Comentarios</label>
                     <div class="formulario__grupo-input">
-                        <textarea class="formulario__input" name="comentarios" id="comentarios" cols="70" rows="10" placeholder="Escribe tu mensaje..." ></textarea>
-                    </div>    
+                        <textarea class="formulario__input" name="comentarios" id="comentarios" cols="70" rows="10"
+                            placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
                 </div> <br><br>
 
-                 <!-- Grupo : Terminos y Condiciones -->
+                <!-- Grupo : Terminos y Condiciones -->
 
                 <div class="formulario__grupo" id="grupo__terminos">
                     <label class="formulario__label">
@@ -116,14 +120,16 @@
                 </div>
 
                 <div class="formulario__mensaje" id="formulario__mensaje">
-                    <p><i class="fas fa-exclamation-triangle"> Error: Por favor rellene el formulario correctamente.</i></p>
+                    <p><i class="fas fa-exclamation-triangle"> Error: Por favor rellene el formulario correctamente.</i>
+                    </p>
                 </div>
 
                 <div class="formulario__grupo formulario__grupo-btn-enviar">
                     <button type="submit" class="formulario__btn">Enviar</button>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> <b> Formulario enviado exitosamente!</b> </p>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> <b> Formulario enviado
+                            exitosamente!</b> </p>
                 </div>
-                
+
 
             </form>
         </div>
@@ -135,24 +141,25 @@
     </main>
     <footer>
         <div class="pie1">
-          <p> <b> Síguenos en las redes sociales </b> </p>
-          
-          <a target="_blank" href="https://facebook.com"><img src="./imagenes/facebook.png" width="25px" alt="Facebook"></a>
-          <a target="_blank" href="https://instagram.com"><img src="./imagenes/instagram.png" width="25px"
-              alt="instagram"></a>
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=054294154897642"><img src="./imagenes/whatsapp.png"
-              width="25px" alt="whatsapp"></a>
+            <p> <b> Síguenos en las redes sociales </b> </p>
+
+            <a target="_blank" href="https://facebook.com"><img src="./imagenes/facebook.png" width="25px"
+                    alt="Facebook"></a>
+            <a target="_blank" href="https://instagram.com"><img src="./imagenes/instagram.png" width="25px"
+                    alt="instagram"></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=054294154897642"><img
+                    src="./imagenes/whatsapp.png" width="25px" alt="whatsapp"></a>
         </div>
         <div class="pie2">
-          <p> <b> Sitio desarrollado por </b> <br>
-            <span>&#128156;</span> Agata Boccardo, Andrea Natalia Suvia <br />y
-            Constanza Falcón <span>&#128156;</span>
-          </p>
+            <p> <b> Sitio desarrollado por </b> <br>
+                <span>&#128156;</span> Agata Boccardo, Andrea Natalia Suvia <br />y
+                Constanza Falcón <span>&#128156;</span>
+            </p>
         </div>
         <div class="pie3">
             <p> © 2022 <b> Equipo Ruta del Vino, Codo a Codo. </b> <br> All Rights Reserved. </p>
-          </div>
-      </footer>
+        </div>
+    </footer>
 
 </body>
 
