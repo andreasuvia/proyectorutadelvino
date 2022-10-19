@@ -32,9 +32,6 @@ header {
   width: 100%;
   height: auto;
   margin-bottom: auto;
-
-
-
 }
 
 .topnav a {
@@ -61,8 +58,6 @@ header {
     width: 100%;
   }
 }
-
-
 
 .logo {
 
@@ -125,7 +120,7 @@ header {
   position: fixed;
   bottom: 170px;
   right: 20px;
-  
+
 }
 
 a .btn {
@@ -565,7 +560,7 @@ footer {
   height: 100%;
 
   border-radius: 20px;
-  
+
 }
 
 .formulario {
@@ -711,7 +706,7 @@ footer {
   float: center;
 }
 
-/* Mediaqueries */
+/* Mediaqueries formulario*/
 
 @media screen and (max-width: 1000px) {
   .formulario {
@@ -728,4 +723,87 @@ footer {
   .formulario__btn {
     width: 100%;
   }
+}
+
+/* catar vibo */
+.flip-card-cata {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner-cata {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-cata:hover .flip-card-inner-cata {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front-cata,
+.flip-card-back-cata {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front-cata {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back-cata {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back-cata a {
+  text-decoration: none;
+}
+
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+  color: #850408;
+
+  font-family: 'Italic', Arial, Helvetica, sans-serif, serif;
+
+
+}
+
+.container-cata {
+  display: flex;
+  justify-content: center;
+  background: rgb(124, 35, 26);
+  background: linear-gradient(90deg, rgba(124, 35, 26, 1) 7%, rgba(255, 255, 255, 1) 80%);
+}
+
+.CataDelVino {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 60vh;
+
+}
+
+.CataDelVino h3 {
+  font-size: 5rem;
+}
+
+.CataDelVino p {
+  width: 50vw;
+  text-align: center;
 }
