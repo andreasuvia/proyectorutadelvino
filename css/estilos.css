@@ -123,11 +123,11 @@ a .btn{
   border-radius: 20px;
 }
 
-.buttonvolver span{
-/* text-align: right;
+/*.buttonvolver span{
+ text-align: right;
 justify-content: flex-end; 
-float: right; */
-}
+float: right; 
+} */
 
 
 .bienvenidos{
@@ -536,4 +536,84 @@ float: right; */
 }
 
 
+ /* catar vibo */
+ .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back a {
+  text-decoration: none;
+}
+
+
+ h1 {
+  text-align: center;
+  text-decoration: none;
+  color: #850408;
  
+  font-family: 'Italic', Arial, Helvetica, sans-serif, serif;
+
+
+}
+
+.conteiner-cata{
+  display: flex;
+  justify-content: center;
+  background: rgb(124,35,26);
+background: linear-gradient(90deg, rgba(124,35,26,1) 7%, rgba(255,255,255,1) 80%);
+}
+
+.CataDelVino {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 60vh;
+
+}
+
+.CataDelVino h3 {
+  font-size: 5rem;
+}
+
+.CataDelVino p {
+  width: 50vw;
+  text-align: center;
+}

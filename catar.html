@@ -14,47 +14,7 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/1e8e4e50bc.js" crossorigin="anonymous"></script>
-<style> 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: transparent;
-  color: white;
-  transform: rotateY(180deg);
-}
-</style>
+      
 </head>
 <body>
 
@@ -78,14 +38,19 @@
             </div>
         </nav>
     </header>
-    <main>
-        <br><br><br>
-        <H3>La Cata del Vino</H3>
-        <p>"Consiste en probar con atención un producto cuya calidad queremos apreciar; se trata de someterlo a 
-            nuestros entidos y conocerlo buscando sus diferentes defectos y cualidades, con el fin de expresarlos;
-             la cata es estudiar, describir, definir, juzgar y clasificar" Peynaud</p>
+<main>
         <br><br>
-        <img src="./imagenes/cata-vinos.jpg" alt="Cata">
+        <section class="conteiner-cata">
+            <div class="CataDelVino">
+            <h3 id="CataDelVino"> La Cata del Vino </h3>
+            <p>Consiste en probar con atención un producto cuya calidad queremos apreciar; se trata de someterlo a 
+                nuestros entidos y conocerlo buscando sus diferentes defectos y cualidades, con el fin de expresarlos;
+                la cata es estudiar, describir, definir, juzgar y clasificar" Peynau
+            </p>
+    
+          </div>
+        </section>
+        
     <br>
         <h3>Cómo catar el Vino</h3>
  
@@ -130,9 +95,9 @@
 </div>
 </main>
 <main>
-        <ol>
-            <h3>La cata paso a paso:</h3>
-            <br>
+     <ol>
+        <h3>Paso a paso:</h3>
+        <br>
         <h4 id="catavisual"> Visual</h4>
         <a href="#nav"></a>
             <li>
@@ -181,14 +146,14 @@
             </li>
 
        <br>
-                Disfrute y sienta la naturaleza de nuestras tierras, los aromas de nuestros frutos y los colores
-                intensos que nos brinda.
+            Disfrute y sienta la naturaleza de nuestras tierras, los aromas de nuestros frutos y los colores
+            intensos que nos brinda.
        <br>
     
-        <h3>Aprende a catar un buen vino</h3>
-          <p>Si te dieron ganas de aprender cómo catar vino no olvides que uno de los requisitos es realizar muchas catas. 
-            Disfrutarás de un recorrido completo por las instalaciones en las bodegas de nuestro país y podrás poner en 
-            práctica tus conocimientos o aprender desde cero, porque nosotros te enseñaremos todo lo que necesitas saber.</p> 
+        <h2>Aprende a catar un buen vino</h2>
+        Si te dieron ganas de aprender cómo catar vino no olvides que uno de los requisitos es realizar muchas catas. 
+        Disfrutarás de un recorrido completo por las instalaciones en las bodegas de nuestro país y podrás poner en 
+        práctica tus conocimientos o aprender desde cero, porque nosotros te enseñaremos todo lo que necesitas saber.
         </ol>
 
         <h2>Viví la experiencia con nosotros</h2>
@@ -198,6 +163,7 @@
        pattern=".+@globex\.com" size="30" required>
        <br>
   </main>
+  <br>
     <footer>
         <div class="pie1">
           <p> <b> Síguenos en las redes sociales </b> </p>
