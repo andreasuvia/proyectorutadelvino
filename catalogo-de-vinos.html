@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Ruta del Vino</title>
+  <link rel="icon" href="./imagenes/uvas.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1e8e4e50bc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    #app img {
+        width: 100px;
+        height: 100px;
+        object-fit: scale-down;
+    }
+</style>
+
+</head>  
+<body>
+
+  <header>
+
+    <div class="logo"> <a href="index.html"> <img src="./imagenes/cartel.png" alt="Logo"> </a></div>
+    <div class="redes">
+      <p><b> Seguinos: <br /></p>
+      <a target="_blank" href="https://facebook.com"><img src="./imagenes/facebook.png" width="30px" alt="Facebook"></a>
+      <a target="_blank" href="https://instagram.com"><img src="./imagenes/instagram.png" width="30px"
+          alt="instagram"></a>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=054294154897642"><img src="./imagenes/whatsapp.png"
+          width="30px" alt="whatsapp"></a>
+    </div>
+
+    <nav>
+      <div class="topnav">
+        <a href="index.html"><img src="./imagenes/casa.png"></a>
+        <a href="#Historia">Historia</a>
+        <a href="nuestrasvids.html">Nuestras Vids</a>
+        <a href="catar.html">Catar Vino</a>
+        <a href="catalogo-de-vinos.html">Catálogo de Vinos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </nav>
+
+
+    <div>
+          <img class="animate__animated animate__fadeInLeft" src="./imagenes/slide-vino3.jpg" >
+        </div>
+        
+  </header>
+  <main>
+
+    <div class="bienvenidos">
+        <div id="app">
+            <h1>Catálogo de vinos</h1>
+            
+            <div class="container">
+               
+                <table class="table table-striped">
+                    <thead>
+                        <th>Id</th>
+                        <th>Bodega</th>
+                        <th>Vinos</th>
+                        <th>Promedio</th>
+                        <th>Reseñas</th>
+                        <th>Zona</th>
+                        <th>Foto</th>
+                    </thead>
+                    <tr v-for="wine of wines">
+                        <td>{{wine.id}}</td>
+                        <td>{{wine.winery}}</td>
+                        <td>{{wine.wine}}</td>
+                        <td>{{wine.rating.average}}</td>
+                        <td>{{wine.rating.reviews}}</td>
+                        <td>{{wine.location}}</td>
+    
+                        <td>
+                            <img :src="wine.image" :alt="wine.wine">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./js/main.js"></script>
+    </div>
+    <br><br>
+
+   
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+      
+  </body>
+  <footer>
+    <div class="pie1">
+      <p> <b> Síguenos en las redes sociales </b> </p>
+
+      <a target="_blank" href="https://facebook.com"><img src="./imagenes/facebook.png" width="25px" alt="Facebook"></a>
+      <a target="_blank" href="https://instagram.com"><img src="./imagenes/instagram.png" width="25px"
+          alt="instagram"></a>
+      <a target="_blank" href="https://api.whatsapp.com/send?phone=054294154897642"><img src="./imagenes/whatsapp.png"
+          width="25px" alt="whatsapp"></a>
+    </div>
+    <div class="pie2">
+      <p> <b> Sitio desarrollado por </b> <br>
+        <span>&#128156;</span> Agata Boccardo, Andrea Natalia Suvia <br />y
+        Constanza Falcón <span>&#128156;</span>
+      </p>
+    </div>
+    <div class="pie3">
+      <p> © 2022 <b> Equipo Ruta del Vino, Codo a Codo. </b> <br> All Rights Reserved. </p>
+    </div>
+  </footer>
+  
+
+
+</html>
