@@ -1,13 +1,11 @@
-const { createApp } = Vue  //creo un objeto VUE llamdo createApp
+const { createApp } = Vue 
 
   createApp({
     data() {
       return {
         url:'https://api.sampleapis.com/wines/reds',
         wines:[],
- //       error:false,
- //       nroerror:0,
- //       cargando:true
+
       } 
     },   
     methods: {
@@ -16,16 +14,11 @@ const { createApp } = Vue  //creo un objeto VUE llamdo createApp
           fetch(url)
               .then(response => response.json())
               .then(data => { 
-                this.wines=data // volca los datos del Json
-                //this.cargando=false
+                this.wines=data 
+                
                  }
               )
-         //     .catch(error=>{
-        //        console.log("error"+error)
-         //       this.error=true
-         //       this.nroerror=error
-         //     }
-        //      )
+       
       }
     },
     created(){
