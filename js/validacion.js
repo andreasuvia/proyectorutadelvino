@@ -83,36 +83,3 @@ formulario.addEventListener('submit', (e) => {
 });
 
 
-
-
-// function validarEnviar() {
-//     //valido el nombre
-//     if (document.fvalida.nombre.value.length  == 0) {
-//         alert("Tiene que escribir su Nombre")
-//         document.fvalida.nombre.focus()
-//         return 0
-//     }
-
-    // if (document.fvalida.apellido.value.length  == 0) {
-    //     alert("Tiene que escribir su Apellido")
-    //     document.fvalida.apellido.focus()
-    //     return 0
-    // }
-
-    // let date = Date.parse(nac);
-
-    // if (isNaN(date)) {
-    //     alert("Ingrese una fecha válida")
-    //     document.fvalida.nac.focus()
-    //     return 0
-    // }
-
-    // if (document.fvalida.email.value.length  == 0) {
-    //     alert("Tiene que escribir su Mail")
-    //     document.fvalida.email.focus()
-    //     return 0
-    // }
-
-    // //Finalmente, si llegó hasta aqui, se envia el form.
-    // alert("Muchas gracias por enviar el formulario")
-    // document.fvalida.submit()
