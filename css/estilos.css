@@ -287,8 +287,8 @@ footer {
   font-size: 18px;
   line-height: 1.5;
   margin-top: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-bottom: 0px;
 }
 
@@ -310,8 +310,8 @@ footer {
   padding: 0px 10px;
   font-size: 18px;
   line-height: 1.5;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -335,8 +335,8 @@ footer {
   padding: 20px 20px;
   font-size: 18px;
   line-height: 1.5;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .provparte4 {
@@ -347,8 +347,8 @@ footer {
   padding: 20px 20px;
   font-size: 18px;
   line-height: 1.5;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .provparte4 img {
@@ -367,8 +367,8 @@ footer {
   padding: 20px 20px;
   font-size: 18px;
   line-height: 1.5;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .provparte5 img {
@@ -808,6 +808,11 @@ h1 {
   text-align: center;
 }
 
+#seccatar{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 #comocatar{
   text-align: center;
   margin-top: 50px;
@@ -818,13 +823,13 @@ h1 {
 #pasos, #aprende, #vivi{
   font-weight: 600;
   margin-bottom: 30px;
-  margin-left: 30px;
-}
-
-#aprendetxt{
-  margin-left: 30px;
 }
 
 #vivi{
+  text-align: center;
+}
+
+.sentido{
+  line-height: 200px;
   text-align: center;
 }
