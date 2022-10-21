@@ -59,6 +59,24 @@ header {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  }
+
+@media screen and (min-width: 768px) {
+  .topnav a {
+    display: block;
+    float: left;
+    width: auto;
+  }
+  }
+
+
+
+
 .logo {
 
   padding-top: 60px;
@@ -68,10 +86,44 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .logo {
+  .logo img {
     float: none;
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .logo img {
+    float: none;
+    width: 80%;
+    text-align: center;
+  }
+  }
+
+@media screen  (min-width: 768px) {
+  .logo img {
+    padding-top: 60px;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo img {
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+    }
+  }
+
+
+@media screen and (max-width: 600px) {
+  .redes {
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -98,6 +150,34 @@ header {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  .fotovino img {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .fotovino img {
+    float: none;
+    width: 100%;
+  }
+  }
+
+@media screen  (min-width: 768px) {
+  .fotovino img {
+    float: none;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fotovino img {
+    float: none;
+    width: 100%;
+    }
+  }
+
 
 @media screen and (max-width: 600px) {
   .redes {
@@ -121,7 +201,7 @@ header {
   bottom: 170px;
   right: 20px;
 
-}
+}}
 
 a .btn {
   color: #ffffff;
